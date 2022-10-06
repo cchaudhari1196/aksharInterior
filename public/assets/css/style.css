@@ -88,6 +88,10 @@ body {
       background: #212121; }
 
 img {
+  width: 100%;
+  height: auto; }
+
+.logo img {
   width: 120%;
   height: auto; }
 

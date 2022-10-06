@@ -226,7 +226,7 @@ module.exports = require("react/jsx-dev-runtime");
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"lightLogo":"/assets/img/logo-light.png","darkLogo":"/assets/img/logo-dark.png","mapIframe":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29695.671230259337!2d2.3558151621751584!3d48.86295242559001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d877937b0f%3A0xb975fcfa192f84d4!2z2YXYqtit2YEg2KfZhNmE2YjZgdix!5e0!3m2!1sar!2seg!4v1642786626975!5m2!1sar!2seg","showLoading":true}');
+module.exports = JSON.parse('{"lightLogo":"/assets/img/logo-light.png","darkLogo":"/assets/img/logo-dark.png","mapIframe":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d236.33751443795313!2d73.78027562042455!3d18.601059572815434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9105667ddab%3A0xf05f32a7020a3252!2sJQ2J%2BC6Q%2C%20Shivraj%20Nagar%20Rd%2C%20Kalewadi%20Phata%2C%20Gajanan%20Nagar%2C%20Shivraj%20Nagar%2C%20Rahatani%2C%20Pimpri-Chinchwad%2C%20Maharashtra%20411017!5e0!3m2!1sen!2sin!4v1665080849026!5m2!1sen!2sin","showLoading":true,"address":"Shop no 13, near Dayal Heights, Kalewadi phata, Pimpri Chinchwad - 411057","phone":["+91 99707 69542","+91 75078 06472"],"email":["aksharinterior1702@gmail.com"],"yt":"","fb":"","twitter":"","instagram":"https://www.instagram.com/akshar_interiors1702/?hl=en"}');
 
 /***/ })
 

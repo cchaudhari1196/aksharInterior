@@ -32,7 +32,7 @@ const Navbar = ({ navbarRef, logoRef, logoClass }) => {
     <>
       <nav className="navbar change navbar-expand-lg" ref={navbarRef}>
         <div className="container">
-          <Link href="/demos">
+          <Link href="/">
             <a className={`logo ${logoClass && logoClass}`}>
               <img src={appData.lightLogo} alt="logo" ref={logoRef} />
             </a>
@@ -55,39 +55,10 @@ const Navbar = ({ navbarRef, logoRef, logoClass }) => {
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item dropdown" onClick={handleDropdown}>
-                <span
-                  className="nav-link dropdown-toggle"
-                  data-toggle="dropdown"
-                  role="button"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Home
-                </span>
-                <div className="dropdown-menu">
-                  <Link href="/home7">
-                    <a className="dropdown-item">Home Default</a>
-                  </Link>
-                  <Link href="/home6">
-                    <a className="dropdown-item">Interior Agency</a>
-                  </Link>
-                  <Link href="/home5">
-                    <a className="dropdown-item">Creative Arch</a>
-                  </Link>
+              <li className="nav-item">
                   <Link href="/home4">
-                    <a className="dropdown-item">Architecture Studio</a>
+                    <a className="nav-link">Home</a>
                   </Link>
-                  <Link href="/home1">
-                    <a className="dropdown-item">Home Light</a>
-                  </Link>
-                  <Link href="/home2">
-                    <a className="dropdown-item">Interior Light</a>
-                  </Link>
-                  <Link href="/home3">
-                    <a className="dropdown-item">Architecture Light</a>
-                  </Link>
-                </div>
               </li>
               <li className="nav-item">
                 <Link href="/about">

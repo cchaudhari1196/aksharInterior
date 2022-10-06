@@ -21,8 +21,8 @@ const About = () => {
           { id: 2, name: "about us", url: "/about" },
         ]}
       />
-      <AboutUs4 />
-      <Services3 bigTitle grid />
+      {/* <AboutUs4 /> */}
+      <Services3 grid />
       <Testimonials1 bigTitle />
       <Team2 />
       <Skills2 />

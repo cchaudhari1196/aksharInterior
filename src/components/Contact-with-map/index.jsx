@@ -1,7 +1,23 @@
 import React from "react";
 import appData from '../../data/app.json'
+import cred from '../../data/emailjs-cred.json'
+
+import emailjs from 'emailjs-com';
+
 
 const ContactWithMap = () => {
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(cred.emailServiceId, cred.templateId, e.target, cred.publicKey)
+      .then((result) => {
+          alert("SuccessFully Sent")
+      }, (error) => {
+          alert("Failed To send the msg...Please, contact using the email or phone.")
+      });
+  };
+
   return (
     <div className="container-fluid">
       <div className="row">
@@ -9,15 +25,15 @@ const ContactWithMap = () => {
           <iframe src={appData.mapIframe}></iframe>
         </div>
         <div className="col-lg-6 form">
-          <form id="contact-form" method="post">
+          <form id="contact-form" method="post" onSubmit={sendEmail}>
             <div className="messages"></div>
 
             <div className="controls">
               <div className="form-group">
                 <input
-                  id="form_name"
+                  id="from_name"
                   type="text"
-                  name="name"
+                  name="from_name"
                   placeholder="Name"
                   required="required"
                 />
@@ -25,9 +41,9 @@ const ContactWithMap = () => {
 
               <div className="form-group">
                 <input
-                  id="form_email"
+                  id="from_email"
                   type="email"
-                  name="email"
+                  name="from_email"
                   placeholder="Email"
                   required="required"
                 />
@@ -35,7 +51,7 @@ const ContactWithMap = () => {
 
               <div className="form-group">
                 <textarea
-                  id="form_message"
+                  id="message"
                   name="message"
                   placeholder="Message"
                   rows="4"
