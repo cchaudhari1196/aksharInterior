@@ -25,12 +25,12 @@ import aboutData from "../../data/about-us1.json"
             <img src={aboutData.image} alt="" />
 
             <div className="feat mt-30">
-              {aboutData.numbers.map(num => {
+              {aboutData.numbers.map(a => {
                 <div className="item">
-                <div>
-                  <h5>{num.number}</h5>
-                  <h6>{num.name}</h6>
-                </div>
+                  <div>
+                    <h5>{a.number}</h5>
+                    <h6>{a.name}</h6>
+                  </div>
                 </div>
               })}
             </div>

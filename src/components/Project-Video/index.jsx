@@ -2,7 +2,8 @@ import React from "react";
 import ModalVideo from "react-modal-video";
 import "react-modal-video/css/modal-video.css";
 
-const ProjectVideo = () => {
+const ProjectVideo = ({videoUrl,videoId}) => {
+  console.log(videoId)
   React.useEffect(() => {
     console.clear();
   }, []);
@@ -13,7 +14,7 @@ const ProjectVideo = () => {
         <div
           className="video-wrapper section-padding bg-img parallaxie valign"
           style={{
-            backgroundImage: "url(/assets/img/portfolio/project1/vid.jpg)",
+            backgroundImage: "url(/assets/img/project-details/1/1.jpg)",
           }}
           data-overlay-dark="4"
         >
@@ -22,7 +23,7 @@ const ProjectVideo = () => {
               <ModalVideo
                 autoplay
                 isOpen={isOpen}
-                videoId="AzwC6umvd1s"
+                videoId={videoId}
                 onClose={() => setOpen(false)}
               />
             )}
@@ -32,7 +33,7 @@ const ProjectVideo = () => {
                 e.preventDefault();
                 setOpen(true);
               }}
-              href="https://vimeo.com/127203262"
+              href="https://vimeo.com/451736319"
             >
               <div className="vid-butn">
                 <span className="icon">
