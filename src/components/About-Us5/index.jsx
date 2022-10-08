@@ -1,5 +1,6 @@
 import React from "react";
 import Split from "../Split";
+import aboutData from "../../data/about-us1.json";
 
 const AboutUs5 = () => {
   return (
@@ -10,7 +11,7 @@ const AboutUs5 = () => {
             <div className="main-tit">
               <Split>
                 <h2 className="wow words chars splitting" data-splitting>
-                  We Are The Leader <br /> In The Architectural
+                  {aboutData.title.first}
                 </h2>
               </Split>
             </div>
@@ -19,14 +20,11 @@ const AboutUs5 = () => {
             <div className="content">
               <Split>
                 <p className="wow txt words chars splitting" data-splitting>
-                  Quisque massa ipsum, luctus at tempus eleifend congue quis
-                  lectus. Morbi bibendum nisl id porttitor ultrices odio elit
-                  vestibulum metus, ac semper velit quam sed nulla aenean eu
-                  hendreritt.
+                {aboutData.content}
                 </p>
               </Split>
               <div className="exp">
-                <h3 className="">25</h3>
+                <h3 className="">{aboutData.exp.nmb}</h3>
                 <h5 className=" valign">
                   <Split>
                     <span className="wow words chars splitting" data-splitting>

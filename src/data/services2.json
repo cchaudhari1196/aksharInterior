@@ -1,17 +1,19 @@
 [
   {
     "id": "01",
-    "title": "Architecture",
-    "content": "Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat."
+    "title": "Renovation Consult",
+    "content": "Surfaces and Fixtures - Flooring - spacing - Lighting - Paint - Landscape Designing ",
+    "icon":"flaticon-home",
+    "iconHelp":"https://www.flaticon.com/search?word=design&order_by=4    -----   Visit this and get icon names "
   },
   {
     "id": "02",
     "title": "Interior Design",
-    "content": "Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat."
+    "content": "Custom Furniture- Rugs & Pillows - Paint - Lighting - Interior Design & Execution"
   },
   {
     "id": "03",
-    "title": "3D Modeling",
-    "content": "Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat."
+    "title": "New Build Consult",
+    "content": "Space Planning - Elevation & Flooring - Appliances & Visual Rendering - Kitchen & Bath Design"
   }
 ]

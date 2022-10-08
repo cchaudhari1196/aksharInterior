@@ -10,6 +10,8 @@ import PricingTable from "../../components/Pricing-Table";
 import Testimonials2 from "../../components/Testimonials2";
 import WorkWithoutFilter from "../../components/Work-Without-Filter";
 import IntroWithHorizontal2 from "../../components/Intro-with-horizontal2";
+import Portfolio2 from "../../components/Portfolio2";
+import AboutUs8 from "../../components/About-Us8";
 
 const Home4 = () => {
   React.useEffect(() => {
@@ -19,15 +21,15 @@ const Home4 = () => {
     <MainLayout logoClassText="dis">
       <IntroWithHorizontal2 />
       <div className="main-content">
-        <AboutUs5 />
+        <AboutUs8 />
         <Services5 />
         <WorkWithoutFilter vis />
+        {/* <Portfolio2 /> */}
         <Testimonials2 />
-        <PricingTable />
         <Team2 />
         <Video />
-        <Blogs3 />
-        <Brands2 />
+        {/* <Blogs3 /> */}
+        {/* <Brands2 /> */}
       </div>
     </MainLayout>
   );
