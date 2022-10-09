@@ -13,11 +13,12 @@
             "/assets/img/project-details/1/7.jpg"
         ],
         "videoId":"fbdxYoFb64g",
-        "___VideoNote":"Get the videoId from youtube url  ----->  v=<videoId>",
+        "____VideoNote":"Get the videoId from youtube url  ----->  v=<videoId>",
         "description":"We are a Creative Agency &amp; Startup Studio that provides Digital Products and Services turns to focus on client success. We specialize in user interface design, including front-end development which we consider to be an integral part.",
         "client":"Infosys Ltd.",
         "date":"26 Jan 2021",
-        "categories":["Corporate","Co-workspace"],
+        "categories":["commercial"],
+        "____CatNote":"Please use category from one of these interior,residential, commercial. So, that Search will work",
         "tags":["Modern","Office"]
     },
 
@@ -39,7 +40,7 @@
         "description":"Completed the work of Interior designing at Tudip technologies where  the cutomer are really satisfied with us. Video testemony is attached.",
         "client":"Tudip Tech.",
         "date":"26 Jan 2018",
-        "categories":["Corporate","Co-workspace"],
+        "categories":["interior","residential"],
         "tags":["Modern","Office"]
     }
 ]

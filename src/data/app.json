@@ -9,5 +9,10 @@
   "yt":"",
   "fb":"",
   "twitter":"",
-  "instagram":"https://www.instagram.com/akshar_interiors1702/?hl=en"
+  "instagram":"https://www.instagram.com/akshar_interiors1702/?hl=en",
+  "homeVideo":{
+    "videoId":"758425790",
+    "channel":"vimeo",
+    "thumbnail":"/assets/img/logo-ls.png"
+  }
 }

@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import Split from "../Split";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React from 'react'
+import Split from '../Split'
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+import testimonialsData from '../../data/testimonials1.json'
 
 const Testimonials2 = () => {
   return (
@@ -44,81 +45,29 @@ const Testimonials2 = () => {
                   ],
                 }}
               >
-                <div className="item">
-                  <div className="info">
-                    <div className="author">
-                      <div className="img-author">
-                        <div className="img">
-                          <img src="/assets/img/clients/1.jpg" alt="" />
+                {testimonialsData.map((review) => (
+                  <div className="item">
+                    <div className="info">
+                      <div className="author">
+                        <div className="img-author">
+                          <div className="img">
+                            <img src={review.image} alt="" />
+                          </div>
+                        </div>
+                        <div className="cont">
+                          <h6 className="author-name">{review.username}</h6>
+                          <span className="author-details">
+                            {review.usertitle}
+                          </span>
                         </div>
                       </div>
-                      <div className="cont">
-                        <h6 className="author-name">Alex Regelman</h6>
-                        <span className="author-details">
-                          Co-founder, Colabrio
-                        </span>
-                      </div>
+                    </div>
+                    <p>{review.content}</p>
+                    <div className="qoute-img">
+                      <img src="/assets/img/icons/quote-light.svg" alt="" />
                     </div>
                   </div>
-                  <p>
-                    Working with Arch digital agency to support our organic and
-                    paid social media activity has extended the marketing
-                    activities we are able to achieve.
-                  </p>
-                  <div className="qoute-img">
-                    <img src="/assets/img/icons/quote-light.svg" alt="" />
-                  </div>
-                </div>
-                <div className="item">
-                  <div className="info">
-                    <div className="author">
-                      <div className="img-author">
-                        <div className="img">
-                          <img src="/assets/img/clients/1.jpg" alt="" />
-                        </div>
-                      </div>
-                      <div className="cont">
-                        <h6 className="author-name">Alex Regelman</h6>
-                        <span className="author-details">
-                          Co-founder, Colabrio
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <p>
-                    Working with Arch digital agency to support our organic and
-                    paid social media activity has extended the marketing
-                    activities we are able to achieve.
-                  </p>
-                  <div className="qoute-img">
-                    <img src="/assets/img/icons/quote-light.svg" alt="" />
-                  </div>
-                </div>
-                <div className="item">
-                  <div className="info">
-                    <div className="author">
-                      <div className="img-author">
-                        <div className="img">
-                          <img src="/assets/img/clients/1.jpg" alt="" />
-                        </div>
-                      </div>
-                      <div className="cont">
-                        <h6 className="author-name">Alex Regelman</h6>
-                        <span className="author-details">
-                          Co-founder, Colabrio
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <p>
-                    Working with Arch digital agency to support our organic and
-                    paid social media activity has extended the marketing
-                    activities we are able to achieve.
-                  </p>
-                  <div className="qoute-img">
-                    <img src="/assets/img/icons/quote-light.svg" alt="" />
-                  </div>
-                </div>
+                ))}
               </Slider>
               <div className="qoute-icon">
                 <img src="/assets/img/icons/left-quote.svg" alt="" />
@@ -140,7 +89,7 @@ const Testimonials2 = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Testimonials2;
+export default Testimonials2

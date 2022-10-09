@@ -1,52 +1,22 @@
 [
   {
     "id": 1,
-    "image": "/assets/img/team/1.jpg",
+    "image": "/assets/img/team/prateeksha.jpg",
     "facebook": "#",
     "twitter": "#",
     "behance": "#",
     "linkedin": "#",
-    "username": "Hasib sharif",
-    "usertitle": "General Manager"
+    "username": "Prateeksha Chavan",
+    "usertitle": "Founder & Head Interior Designer"
   },
   {
     "id": 2,
-    "image": "/assets/img/team/2.jpg",
+    "image": "/assets/img/team/sagar.jpg",
     "facebook": "#",
     "twitter": "#",
     "behance": "#",
     "linkedin": "#",
-    "username": "Jonson Leo",
-    "usertitle": "Founder"
-  },
-  {
-    "id": 3,
-    "image": "/assets/img/team/3.jpg",
-    "facebook": "#",
-    "twitter": "#",
-    "behance": "#",
-    "linkedin": "#",
-    "username": "Leio Man",
-    "usertitle": "Founder"
-  },
-  {
-    "id": 4,
-    "image": "/assets/img/team/4.jpg",
-    "facebook": "#",
-    "twitter": "#",
-    "behance": "#",
-    "linkedin": "#",
-    "username": "Robert Front",
-    "usertitle": "CEO Founder"
-  },
-  {
-    "id": 5,
-    "image": "/assets/img/team/5.jpg",
-    "facebook": "#",
-    "twitter": "#",
-    "behance": "#",
-    "linkedin": "#",
-    "username": "Matt Huk",
-    "usertitle": "3D Visualization"
+    "username": "Sagar Jadhav",
+    "usertitle": "Co-Founder"
   }
 ]

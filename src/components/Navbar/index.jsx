@@ -65,33 +65,12 @@ const Navbar = ({ navbarRef, logoRef, logoClass }) => {
                   <a className="nav-link">About</a>
                 </Link>
               </li>
-              <li className="nav-item dropdown" onClick={handleDropdown}>
-                <span
-                  className="nav-link dropdown-toggle"
-                  data-toggle="dropdown"
-                  href="#"
-                  role="button"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Portfolio
-                </span>
-                <div className="dropdown-menu">
-                  <Link href="/work1">
-                    <a className="dropdown-item">Two Column</a>
-                  </Link>
-                  <Link href="/work2">
-                    <a className="dropdown-item">Three Column</a>
-                  </Link>
-                  <Link href="/work3">
-                    <a className="dropdown-item">Four Column</a>
-                  </Link>
-                  <Link href="/project-details">
-                    <a className="dropdown-item">Single Project</a>
-                  </Link>
-                </div>
+              <li className="nav-item">
+                <Link href="/">
+                  <a className="nav-link">Portfolio</a>
+                </Link>
               </li>
-              <li className="nav-item dropdown" onClick={handleDropdown}>
+              {/* <li className="nav-item dropdown" onClick={handleDropdown}>
                 <span
                   className="nav-link dropdown-toggle"
                   data-toggle="dropdown"
@@ -110,7 +89,7 @@ const Navbar = ({ navbarRef, logoRef, logoClass }) => {
                     <a className="dropdown-item">Post Details</a>
                   </Link>
                 </div>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link href="/contact">
                   <a className="nav-link">Contact</a>

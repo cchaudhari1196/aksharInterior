@@ -1,6 +1,7 @@
 import React from 'react'
 import ModalVideo from "react-modal-video";
 import "react-modal-video/css/modal-video.css";
+import appData from "../../data/app.json"
 
 const Video = () => {
   React.useEffect(() => {
@@ -10,14 +11,14 @@ const Video = () => {
     return (
       <section
         className="video bg-img parallaxie"
-        style={{ backgroundImage: "url(/assets/img/bg-vid.jpg)" }}
+        style={{ backgroundImage: `url(${appData.homeVideo.thumbnail})` }}
       >
         {typeof window !== "undefined" && (
           <ModalVideo
-            channel="vimeo"
+            channel={appData.homeVideo.channel}
             autoplay
             isOpen={isOpen}
-            videoId="127203262"
+            videoId={appData.homeVideo.videoId}
             onClose={() => setOpen(false)}
           />
         )}
@@ -27,7 +28,7 @@ const Video = () => {
             e.preventDefault();
             setOpen(true);
           }}
-          href="https://vimeo.com/127203262"
+          href="https://vimeo.com/758425790"
         >
           <div className="vid-butn">
             <span className="icon">

@@ -12,11 +12,11 @@ const Work1 = () => {
     <MainLayout>
       <WorkHeader
         title={{
-          first: "Architecture is a visual art,",
-          second: "and the building speak for themeselves",
+          first: "Designing is a visual art,",
+          second: "and the art speak for themeselves",
         }}
         // title = "text",
-        content="Architecture bibendum pharetra eleifend. Suspendisse vel volutpat purus, sit amet bibendum nisl. Cras mollis turpis a ipsum ultes, nec condimentum ipsum consequat. Mauris vitae consequat nibh, vitae interdum mi."
+        content="Different projects that we have completed succesfully"
       />
       <WorkTwoColumn />
     </MainLayout>
