@@ -46,7 +46,7 @@ const Testimonials2 = () => {
                 }}
               >
                 {testimonialsData.map((review) => (
-                  <div className="item">
+                  <div className="item" key={review.username}>
                     <div className="info">
                       <div className="author">
                         <div className="img-author">
