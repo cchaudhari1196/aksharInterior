@@ -22,7 +22,7 @@ const WorkWithoutFilter = ({ vis }) => {
               </div>
             </div>
             {projects.map(project => (
-              <div className="col-md-6 items">
+              <div className="col-md-6 items" key={project.pid}>
                 <div className="item">
                   <div className="img">
                     <img src={project.headerImage} alt="" />

@@ -12,7 +12,7 @@ const ContactInfo = () => {
               <span className="icon pe-7s-phone"></span>
               <div className="cont">
                 <h6 className="custom-font">Call Us</h6>
-                {appData.phone.map(phone=> <p>{phone}</p>)}
+                {appData.phone.map(phone=> <p key={phone}>{phone}</p>)}
               </div>
             </div>
           </div>
@@ -21,7 +21,7 @@ const ContactInfo = () => {
               <span className="icon pe-7s-mail-open"></span>
               <div className="cont">
                 <h6 className="custom-font">Email Us</h6>
-                {appData.email.map(email=> <p>{email}</p>)}
+                {appData.email.map(email=> <p key={email}>{email}</p>)}
               </div>
             </div>
           </div>

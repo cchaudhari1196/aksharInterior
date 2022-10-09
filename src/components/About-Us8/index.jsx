@@ -26,7 +26,7 @@ import aboutData from "../../data/about-us1.json"
 
             <div className="feat mt-30">
               {aboutData.numbers.map(a => {
-                <div className="item">
+                <div className="item" key={a.number}>
                   <div>
                     <h5>{a.number}</h5>
                     <h6>{a.name}</h6>
