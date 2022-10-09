@@ -4,16 +4,19 @@
     "title": "Renovation Consult",
     "content": "Surfaces and Fixtures - Flooring - spacing - Lighting - Paint - Landscape Designing ",
     "icon":"flaticon-home",
-    "iconHelp":"https://www.flaticon.com/search?word=design&order_by=4    -----   Visit this and get icon names "
+    "iconHelp":"https://www.flaticon.com/search?word=design&order_by=4    -----   Visit this and get icon names ",
+    "image":"/assets/img/renovation.jpg"
   },
   {
     "id": "02",
     "title": "Interior Design",
-    "content": "Custom Furniture- Rugs & Pillows - Paint - Lighting - Interior Design & Execution"
+    "content": "Custom Furniture- Rugs & Pillows - Paint - Lighting - Interior Design & Execution",
+    "image":"/assets/img/interior.jpg"
   },
   {
     "id": "03",
     "title": "New Build Consult",
-    "content": "Space Planning - Elevation & Flooring - Appliances & Visual Rendering - Kitchen & Bath Design"
+    "content": "Space Planning - Elevation & Flooring - Appliances & Visual Rendering - Kitchen & Bath Design",
+    "image":"/assets/img/newSpace.jpg"
   }
 ]

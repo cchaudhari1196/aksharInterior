@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import React, {lazy} from 'react'
+import React, {lazy, useState} from 'react'
 import MainLayout from '../../layouts/main'
 import PageHeader from '../../components/Page-header'
 import ProjectIntro from '../../components/Project-Intro'
@@ -9,17 +9,21 @@ import projects from '../../data/project-details.json'
 
 const ProjectDetails = () => {
   const router = useRouter()
-  const { pid } = router.query
-  const projectDetails = projects[0];
-
+  const [projectDetails,setProjectDetails] = React.useState(projects[0]);
   const indexAlternatioin = [0,3,6,9,12,15,18,21,24,27,30,33];
 
-  if(pid){
-    projectDetails = projects.find(p => p.pid=pid)
-  }
   React.useEffect(() => {
-    document.querySelector('body').classList.add('index3')
-  }, [])
+    document.querySelector('body').classList.add('index3');
+    console.log(router.isReady)
+    console.log(projectDetails)
+    if(router.isReady){
+      const { pid } = router.query
+      console.log(pid)
+      setProjectDetails(projects.find(p => p.pid===parseInt(pid)))
+      console.log(projectDetails)
+    }
+  }, [router.isReady,projectDetails])
+
   return (
     <MainLayout>
       <PageHeader

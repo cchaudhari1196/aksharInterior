@@ -1,5 +1,5 @@
 import React from "react";
-import services3Data from "../../data/services3.json";
+import servicesData from "../../data/services2.json";
 import Link from "next/link";
 
 const Services3 = ({ bigTitle, grid }) => {
@@ -32,7 +32,7 @@ const Services3 = ({ bigTitle, grid }) => {
           )}
 
           <div className="row">
-            {services3Data.map((item, index) => (
+            {servicesData.map((item, index) => (
               <div className="col-lg-4" key={item.id}>
                 <div
                   className="item-bx bg-img wow fadeInUp"
@@ -42,7 +42,7 @@ const Services3 = ({ bigTitle, grid }) => {
                   <span className={item.icon}></span>
                   <h6 className="mb-20">{item.title}</h6>
                   <p>{item.content}</p>
-                  <Link href="/about">
+                  <Link href="/work">
                     <a className={`more ${!grid ? "custom-font" : ""} mt-30`}>
                       Read More
                     </a>

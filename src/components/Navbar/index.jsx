@@ -56,7 +56,7 @@ const Navbar = ({ navbarRef, logoRef, logoClass }) => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                  <Link href="/home4">
+                  <Link href="/">
                     <a className="nav-link">Home</a>
                   </Link>
               </li>
@@ -66,7 +66,7 @@ const Navbar = ({ navbarRef, logoRef, logoClass }) => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href="/">
+                <Link href="/work">
                   <a className="nav-link">Portfolio</a>
                 </Link>
               </li>
