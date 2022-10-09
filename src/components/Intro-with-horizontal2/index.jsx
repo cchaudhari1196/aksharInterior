@@ -10,6 +10,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import removeSlashFromPagination from "../../common/removeSlashFromPagination";
+import appData from "../../data/app.json"
 
 SwiperCore.use([Navigation, Pagination, Parallax]);
 
@@ -141,22 +142,22 @@ const IntroWithHorizontal2 = () => {
           </div>
           <div className="swiper-pagination" ref={paginationRef}></div>
           <div className="social">
-            <Link href="#">
+            <Link href={appData.fb}>
               <a>
                 <i className="fab fa-facebook-f"></i>
               </a>
             </Link>
-            <Link href="#">
+            <Link href={appData.twitter}>
               <a>
                 <i className="fab fa-twitter"></i>
               </a>
             </Link>
-            <Link href="#">
+            <Link href={appData.instagram}>
               <a>
                 <i className="fab fa-instagram"></i>
               </a>
             </Link>
-            <Link href="#">
+            <Link href={appData.yt}>
               <a>
                 <i className="fab fa-youtube"></i>
               </a>
